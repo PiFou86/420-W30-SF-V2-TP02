@@ -132,12 +132,11 @@ Conserver les tests initiaux. Ajouter des tests sur l’action du lot, la jointu
 
 Construire directement les sujets testés. Avec une doublure manuelle, vérifier séparément une valeur retournée et une interaction. Avec deux observateurs espions, vérifier notification unique, absence après refus et désabonnement d’un seul observateur. Les tests doivent échouer si le comportement qu’ils prétendent vérifier est retiré.
 
-| Jalon | Travail | Classe TP | Maison |
-|---|---|---:|---:|
-| S11 | Prise en main, contrats, début du raccordement | 1 h | 1 h |
-| S12 | Contrat générique, tris, jointure, MVC/Observateur, première PR | 3 h | 2 h |
-| S13 | Action, réusinage, seconde PR, validation et intégration | 4 h | 2 h |
-| Total | | 8 h | 5 h |
+| Jalon | Travail |
+|---|---|
+| S11 | Prise en main, contrats, début du raccordement |
+| S12 | Contrat générique, tris, jointure, MVC/Observateur, première PR |
+| S13 | Action, réusinage, seconde PR, validation et intégration |
 
 Les activités de dépôt générique et de PR de S12 se font directement dans le TP. La simulation de conflit Git reste séparée.
 
@@ -147,7 +146,7 @@ Chaque personne ouvre et relit deux PR, en S12 puis S13, de `fonctionnalite/*` v
 
 En S13, présenter son lot pendant **2–3 minutes**, pendant que les autres travaillent : action avec deux vues, refus conservant la saisie, fermeture et réouverture du suivi. L’enseignant consigne ce qu’il a observé. Documenter un retour client concret, le correctif et sa vérification avant remise. Une nouvelle observation est nécessaire si le comportement montré change ensuite.
 
-## Remise sans vidéo
+## Remise
 
 Livrer les lots autonomes, tests et données, `AUTHORS.md`, le diagramme Mermaid d’équipe et une procédure de compilation/lancement au commit final. Chaque lot possède un `JOURNAL.md` bref reliant les critères aux fichiers, tests, PR et commits. Indiquer explicitement le code fourni et le travail ajouté. Ne pas livrer `bin` ni `obj`.
 

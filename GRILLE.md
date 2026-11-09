@@ -23,7 +23,7 @@ Les points concernent les ajouts et les preuves de l’étudiant. Le code fourni
 
 ## Niveaux de réalisation
 
-- **Satisfaisant, autour de 70 % :** parcours courant utilisable, rôles principaux présents, notifications après succès, recherche et action cohérentes; tests et preuves existent, avec certaines limites ou justifications encore incomplètes.
+- **Satisfaisant, autour de 60-79 % :** parcours courant utilisable, rôles principaux présents, notifications après succès, recherche et action cohérentes; tests et preuves existent, avec certaines limites ou justifications encore incomplètes.
 - **Solide, autour de 80–89 % :** contrats respectés sur les cas limites, doubles pertinents, désabonnement fiable, réusinage effectif et revues vérifiables.
 - **Très solide, 90–100 % :** réalisation complète, robuste et précisément justifiée, y compris les refus, la persistance et les changements de comportement testés.
 
