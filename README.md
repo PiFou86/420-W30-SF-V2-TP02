@@ -48,7 +48,7 @@ Saisie modale                         Suivi non modal
 | Numéro et champs du lot      |      | Dernière opération       |
 | Lignes / nom-prix / période  |      | Numéro et détail         |
 | Message de refus             |      +--------------------------+
-| [Enregistrer] [Annuler]       |
+| [Enregistrer] [Annuler]      |
 +------------------------------+
 ~~~
 
