@@ -1,0 +1,9 @@
+<Solution>
+  <Project Path="TP02_Menu.Application/TP02_Menu.Application.csproj" />
+  <Project Path="TP02_Menu.Domaine/TP02_Menu.Domaine.csproj" />
+  <Project Path="TP02_Menu.Infrastructure/TP02_Menu.Infrastructure.csproj" />
+  <Project Path="TP02_Menu.Presentation/TP02_Menu.Presentation.csproj" />
+  <Project Path="TP02_Menu.Terminal/TP02_Menu.Terminal.csproj" />
+  <Project Path="TP02_Menu.Tests/TP02_Menu.Tests.csproj" />
+  <Project Path="TP02_Menu.WinForms/TP02_Menu.WinForms.csproj" />
+</Solution>

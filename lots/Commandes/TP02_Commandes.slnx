@@ -1,0 +1,9 @@
+<Solution>
+  <Project Path="TP02_Commandes.Application/TP02_Commandes.Application.csproj" />
+  <Project Path="TP02_Commandes.Domaine/TP02_Commandes.Domaine.csproj" />
+  <Project Path="TP02_Commandes.Infrastructure/TP02_Commandes.Infrastructure.csproj" />
+  <Project Path="TP02_Commandes.Presentation/TP02_Commandes.Presentation.csproj" />
+  <Project Path="TP02_Commandes.Terminal/TP02_Commandes.Terminal.csproj" />
+  <Project Path="TP02_Commandes.Tests/TP02_Commandes.Tests.csproj" />
+  <Project Path="TP02_Commandes.WinForms/TP02_Commandes.WinForms.csproj" />
+</Solution>

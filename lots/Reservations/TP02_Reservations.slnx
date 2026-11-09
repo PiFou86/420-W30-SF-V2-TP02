@@ -1,0 +1,9 @@
+<Solution>
+  <Project Path="TP02_Reservations.Application/TP02_Reservations.Application.csproj" />
+  <Project Path="TP02_Reservations.Domaine/TP02_Reservations.Domaine.csproj" />
+  <Project Path="TP02_Reservations.Infrastructure/TP02_Reservations.Infrastructure.csproj" />
+  <Project Path="TP02_Reservations.Presentation/TP02_Reservations.Presentation.csproj" />
+  <Project Path="TP02_Reservations.Terminal/TP02_Reservations.Terminal.csproj" />
+  <Project Path="TP02_Reservations.Tests/TP02_Reservations.Tests.csproj" />
+  <Project Path="TP02_Reservations.WinForms/TP02_Reservations.WinForms.csproj" />
+</Solution>

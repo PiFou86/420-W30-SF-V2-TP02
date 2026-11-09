@@ -1,0 +1,16 @@
+<Solution>
+  <Project Path="lots/Commandes/TP02_Commandes.Application/TP02_Commandes.Application.csproj" />
+  <Project Path="lots/Commandes/TP02_Commandes.Domaine/TP02_Commandes.Domaine.csproj" />
+  <Project Path="lots/Commandes/TP02_Commandes.Infrastructure/TP02_Commandes.Infrastructure.csproj" />
+  <Project Path="lots/Commandes/TP02_Commandes.Presentation/TP02_Commandes.Presentation.csproj" />
+  <Project Path="lots/Commandes/TP02_Commandes.Terminal/TP02_Commandes.Terminal.csproj" />
+  <Project Path="lots/Commandes/TP02_Commandes.Tests/TP02_Commandes.Tests.csproj" />
+  <Project Path="lots/Commandes/TP02_Commandes.WinForms/TP02_Commandes.WinForms.csproj" />
+  <Project Path="lots/Menu/TP02_Menu.Application/TP02_Menu.Application.csproj" />
+  <Project Path="lots/Menu/TP02_Menu.Domaine/TP02_Menu.Domaine.csproj" />
+  <Project Path="lots/Menu/TP02_Menu.Infrastructure/TP02_Menu.Infrastructure.csproj" />
+  <Project Path="lots/Menu/TP02_Menu.Presentation/TP02_Menu.Presentation.csproj" />
+  <Project Path="lots/Menu/TP02_Menu.Terminal/TP02_Menu.Terminal.csproj" />
+  <Project Path="lots/Menu/TP02_Menu.Tests/TP02_Menu.Tests.csproj" />
+  <Project Path="lots/Menu/TP02_Menu.WinForms/TP02_Menu.WinForms.csproj" />
+</Solution>

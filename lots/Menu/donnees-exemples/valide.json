@@ -1,0 +1,17 @@
+[
+  {
+    "Numero": 1,
+    "Nom": "Soupe",
+    "Prix": 6.5
+  },
+  {
+    "Numero": 2,
+    "Nom": "Sandwich",
+    "Prix": 9
+  },
+  {
+    "Numero": 3,
+    "Nom": "Eau",
+    "Prix": 0
+  }
+]

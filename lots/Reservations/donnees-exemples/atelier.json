@@ -1,0 +1,23 @@
+[
+  {
+    "Numero": 301,
+    "Ressource": "Salle A",
+    "NombrePersonnes": 4,
+    "Debut": "2026-10-21T10:00:00",
+    "Fin": "2026-10-21T11:00:00"
+  },
+  {
+    "Numero": 302,
+    "Ressource": "Salle B",
+    "NombrePersonnes": 2,
+    "Debut": "2026-10-21T10:00:00",
+    "Fin": "2026-10-21T11:00:00"
+  },
+  {
+    "Numero": 303,
+    "Ressource": "Salle A",
+    "NombrePersonnes": 6,
+    "Debut": "2026-10-21T11:00:00",
+    "Fin": "2026-10-21T12:00:00"
+  }
+]

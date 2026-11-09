@@ -1,0 +1,24 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net10.0</TargetFramework>
+    <LangVersion>14.0</LangVersion>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+    <IsPackable>false</IsPackable>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="17.14.1" />
+    <PackageReference Include="xunit" Version="2.9.3" />
+    <PackageReference Include="xunit.runner.visualstudio" Version="3.1.4" />
+    <ProjectReference Include="../TP02_Commandes.Application/TP02_Commandes.Application.csproj" />
+    <ProjectReference Include="../TP02_Commandes.Domaine/TP02_Commandes.Domaine.csproj" />
+    <ProjectReference Include="../TP02_Commandes.Infrastructure/TP02_Commandes.Infrastructure.csproj" />
+    <ProjectReference Include="../TP02_Commandes.Presentation/TP02_Commandes.Presentation.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="../donnees-exemples/*.json" Link="donnees-exemples/%(Filename)%(Extension)">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+</Project>

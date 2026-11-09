@@ -1,0 +1,29 @@
+[
+  {
+    "Numero": 101,
+    "EstConfirmee": true,
+    "Lignes": [
+      {
+        "Libelle": "Soupe",
+        "PrixUnitaire": 6.5,
+        "Quantite": 2
+      },
+      {
+        "Libelle": "Sandwich",
+        "PrixUnitaire": 9,
+        "Quantite": 1
+      }
+    ]
+  },
+  {
+    "Numero": 102,
+    "EstConfirmee": false,
+    "Lignes": [
+      {
+        "Libelle": "Salade",
+        "PrixUnitaire": 8,
+        "Quantite": 1
+      }
+    ]
+  }
+]
