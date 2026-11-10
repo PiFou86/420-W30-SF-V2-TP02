@@ -21,7 +21,7 @@ public sealed class LectureJsonTests
     [Theory]
     [InlineData("invalide.json")]
     [InlineData("doublon.json")]
-    [InlineData("nul.json")]
+    [InlineData("cas-nul.json")]
     public void Lire_DocumentIncoherent_SignaleUnIncidentSansModifierLeFichier(string fichier)
     {
         string chemin = Chemin(fichier);
