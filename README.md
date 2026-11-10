@@ -34,13 +34,13 @@ Chaque lot contient réellement les trois formulaires suivants, leurs fichiers `
 ~~~text
 Fenêtre principale
 +----------------------------------------------------------------+
-| Filtres du lot                  Ordre : Numéro / second ordre   |
-| [Rechercher] [Tous] [Ouvrir suivi]                               |
+| Filtres du lot                  Ordre : Numéro / second ordre  |
+| [Rechercher] [Tous] [Ouvrir suivi]                             |
 |----------------------------------------------------------------|
-| Numéro | Description | État | Référence | Détail                 |
+| Numéro | Description | État | Référence | Détail               |
 | Grille en lecture seule                                        |
 |----------------------------------------------------------------|
-| [Précédent] [Suivant] [Nouveau] [Modifier] [Action du lot]        |
+| [Précédent] [Suivant] [Nouveau] [Modifier] [Action du lot]     |
 | Message                                                        |
 +----------------------------------------------------------------+
 Saisie modale                         Suivi non modal
@@ -48,7 +48,7 @@ Saisie modale                         Suivi non modal
 | Numéro et champs du lot      |      | Dernière opération       |
 | Lignes / nom-prix / période  |      | Numéro et détail         |
 | Message de refus             |      +--------------------------+
-| [Enregistrer] [Annuler]       |
+| [Enregistrer] [Annuler]      |
 +------------------------------+
 ~~~
 
