@@ -13,167 +13,224 @@ partial class FormCommandes
     }
     private void InitializeComponent()
     {
-        SuspendLayout();
-        lFiltres = new Label();
-        lFiltres.Name = "lFiltres";
-        lFiltres.Location = new Point(16, 12);
-        lFiltres.Size = new Size(800, 24);
-        lFiltres.Text = "Filtres du lot · ordre · navigation";
-        tbFiltre = new TextBox();
-        tbFiltre.Name = "tbFiltre";
-        tbFiltre.Location = new Point(16, 40);
-        tbFiltre.Size = new Size(170, 26);
         cbMontant = new CheckBox();
-        cbMontant.Name = "cbMontant";
-        cbMontant.Location = new Point(200, 40);
-        cbMontant.Size = new Size(90, 26);
-        cbMontant.Text = "Montant";
         nudMontant = new NumericUpDown();
-        nudMontant.Name = "nudMontant";
-        nudMontant.Location = new Point(290, 40);
-        nudMontant.Size = new Size(100, 26);
-        nudMontant.DecimalPlaces = 2; nudMontant.Maximum = 1000000;
         cbEtat = new ComboBox();
-        cbEtat.Name = "cbEtat";
-        cbEtat.Location = new Point(400, 40);
-        cbEtat.Size = new Size(120, 26);
-        cbEtat.DropDownStyle = ComboBoxStyle.DropDownList; cbEtat.Items.AddRange(new object[] { "Tous", "Brouillon", "Confirmée" }); cbEtat.SelectedIndex = 0;
-        cbHistorique = new CheckBox();
-        cbHistorique.Name = "cbHistorique";
-        cbHistorique.Location = new Point(540, 40);
-        cbHistorique.Size = new Size(150, 26);
-        cbHistorique.Text = "Inclure historique";
         cbOrdre = new ComboBox();
-        cbOrdre.Name = "cbOrdre";
-        cbOrdre.Location = new Point(700, 40);
-        cbOrdre.Size = new Size(130, 26);
-        cbOrdre.DropDownStyle = ComboBoxStyle.DropDownList; cbOrdre.Items.AddRange(new object[] { "Numéro", "Total" }); cbOrdre.SelectedIndex = 0;
-        cbPeriode = new CheckBox();
-        cbPeriode.Name = "cbPeriode";
-        cbPeriode.Location = new Point(16, 80);
-        cbPeriode.Size = new Size(90, 26);
-        cbPeriode.Text = "Période";
-        dtpDebutRecherche = new DateTimePicker();
-        dtpDebutRecherche.Name = "dtpDebutRecherche";
-        dtpDebutRecherche.Location = new Point(110, 80);
-        dtpDebutRecherche.Size = new Size(200, 26);
-        dtpDebutRecherche.Format = DateTimePickerFormat.Custom; dtpDebutRecherche.CustomFormat = "yyyy-MM-dd HH:mm";
-        dtpFinRecherche = new DateTimePicker();
-        dtpFinRecherche.Name = "dtpFinRecherche";
-        dtpFinRecherche.Location = new Point(320, 80);
-        dtpFinRecherche.Size = new Size(200, 26);
-        dtpFinRecherche.Format = DateTimePickerFormat.Custom; dtpFinRecherche.CustomFormat = "yyyy-MM-dd HH:mm";
         bRechercher = new Button();
-        bRechercher.Name = "bRechercher";
-        bRechercher.Location = new Point(540, 80);
-        bRechercher.Size = new Size(100, 30);
-        bRechercher.Text = "Rechercher";
         bTous = new Button();
-        bTous.Name = "bTous";
-        bTous.Location = new Point(650, 80);
-        bTous.Size = new Size(80, 30);
-        bTous.Text = "Tous";
         bSuivi = new Button();
-        bSuivi.Name = "bSuivi";
-        bSuivi.Location = new Point(740, 80);
-        bSuivi.Size = new Size(110, 30);
-        bSuivi.Text = "Ouvrir suivi";
         dgvResultats = new DataGridView();
-        dgvResultats.Name = "dgvResultats";
-        dgvResultats.Location = new Point(16, 130);
-        dgvResultats.Size = new Size(920, 330);
-        dgvResultats.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
-        dgvResultats.ReadOnly = true; dgvResultats.AllowUserToAddRows = false; dgvResultats.AllowUserToDeleteRows = false;
-        dgvResultats.AutoGenerateColumns = false; dgvResultats.MultiSelect = false; dgvResultats.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
-        dgvResultats.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
-        bPrecedent = new Button();
-        bPrecedent.Name = "bPrecedent";
-        bPrecedent.Location = new Point(16, 480);
-        bPrecedent.Size = new Size(95, 32);
-        bPrecedent.Text = "Précédent"; bPrecedent.Anchor = AnchorStyles.Bottom | AnchorStyles.Left;
-        bSuivant = new Button();
-        bSuivant.Name = "bSuivant";
-        bSuivant.Location = new Point(120, 480);
-        bSuivant.Size = new Size(95, 32);
-        bSuivant.Text = "Suivant"; bSuivant.Anchor = AnchorStyles.Bottom | AnchorStyles.Left;
-        bNouveau = new Button();
-        bNouveau.Name = "bNouveau";
-        bNouveau.Location = new Point(230, 480);
-        bNouveau.Size = new Size(95, 32);
-        bNouveau.Text = "Nouveau"; bNouveau.Anchor = AnchorStyles.Bottom | AnchorStyles.Left;
-        bModifier = new Button();
-        bModifier.Name = "bModifier";
-        bModifier.Location = new Point(335, 480);
-        bModifier.Size = new Size(95, 32);
-        bModifier.Text = "Modifier"; bModifier.Anchor = AnchorStyles.Bottom | AnchorStyles.Left;
-        bAction = new Button();
-        bAction.Name = "bAction";
-        bAction.Location = new Point(440, 480);
-        bAction.Size = new Size(95, 32);
-        bAction.Text = "Dupliquer"; bAction.Anchor = AnchorStyles.Bottom | AnchorStyles.Left;
-        nudNouveauNumero = new NumericUpDown();
-        nudNouveauNumero.Name = "nudNouveauNumero";
-        nudNouveauNumero.Location = new Point(550, 480);
-        nudNouveauNumero.Size = new Size(100, 32);
-        nudNouveauNumero.Minimum = 1; nudNouveauNumero.Maximum = 1000000; nudNouveauNumero.Value = 105; nudNouveauNumero.Anchor = AnchorStyles.Bottom | AnchorStyles.Left;
-        bConfirmer = new Button();
-        bConfirmer.Name = "bConfirmer";
-        bConfirmer.Location = new Point(670, 480);
-        bConfirmer.Size = new Size(110, 32);
-        bConfirmer.Text = "Confirmer"; bConfirmer.Anchor = AnchorStyles.Bottom | AnchorStyles.Left;
-        lEtat = new Label();
-        lEtat.Name = "lEtat";
-        lEtat.Location = new Point(16, 525);
-        lEtat.Size = new Size(920, 55);
-        lEtat.Text = "Maquette fournie — raccordement MVC à réaliser."; lEtat.Anchor = AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
-        tbFiltre.Visible = false;
-        cbHistorique.Visible = false;
-        cbPeriode.Visible = false;
-        dtpDebutRecherche.Visible = false;
-        dtpFinRecherche.Visible = false;
-        cbMontant.Text = "Total min.";
         colNumero = new DataGridViewTextBoxColumn();
-        colNumero.Name = "colNumero";
+        colDescription = new DataGridViewTextBoxColumn();
+        colEtat = new DataGridViewTextBoxColumn();
+        colReference = new DataGridViewTextBoxColumn();
+        colDetail = new DataGridViewTextBoxColumn();
+        bPrecedent = new Button();
+        bSuivant = new Button();
+        bNouveau = new Button();
+        bModifier = new Button();
+        bAction = new Button();
+        nudNouveauNumero = new NumericUpDown();
+        bConfirmer = new Button();
+        lEtat = new Label();
+        ((System.ComponentModel.ISupportInitialize)nudMontant).BeginInit();
+        ((System.ComponentModel.ISupportInitialize)dgvResultats).BeginInit();
+        ((System.ComponentModel.ISupportInitialize)nudNouveauNumero).BeginInit();
+        SuspendLayout();
+        // 
+        // cbMontant
+        // 
+        cbMontant.Location = new Point(196, 12);
+        cbMontant.Name = "cbMontant";
+        cbMontant.Size = new Size(90, 26);
+        cbMontant.TabIndex = 2;
+        cbMontant.Text = "Total min.";
+        // 
+        // nudMontant
+        // 
+        nudMontant.DecimalPlaces = 2;
+        nudMontant.Location = new Point(286, 12);
+        nudMontant.Maximum = new decimal(new int[] { 1000000, 0, 0, 0 });
+        nudMontant.Name = "nudMontant";
+        nudMontant.Size = new Size(100, 23);
+        nudMontant.TabIndex = 3;
+        // 
+        // cbEtat
+        // 
+        cbEtat.DropDownStyle = ComboBoxStyle.DropDownList;
+        cbEtat.Items.AddRange(new object[] { "Tous", "Brouillon", "Confirmée" });
+        cbEtat.Location = new Point(396, 12);
+        cbEtat.Name = "cbEtat";
+        cbEtat.Size = new Size(120, 23);
+        cbEtat.TabIndex = 4;
+        // 
+        // cbOrdre
+        // 
+        cbOrdre.DropDownStyle = ComboBoxStyle.DropDownList;
+        cbOrdre.Items.AddRange(new object[] { "Numéro", "Total" });
+        cbOrdre.Location = new Point(696, 12);
+        cbOrdre.Name = "cbOrdre";
+        cbOrdre.Size = new Size(130, 23);
+        cbOrdre.TabIndex = 6;
+        // 
+        // bRechercher
+        // 
+        bRechercher.Location = new Point(536, 52);
+        bRechercher.Name = "bRechercher";
+        bRechercher.Size = new Size(100, 30);
+        bRechercher.TabIndex = 10;
+        bRechercher.Text = "Rechercher";
+        // 
+        // bTous
+        // 
+        bTous.Location = new Point(646, 52);
+        bTous.Name = "bTous";
+        bTous.Size = new Size(80, 30);
+        bTous.TabIndex = 11;
+        bTous.Text = "Tous";
+        // 
+        // bSuivi
+        // 
+        bSuivi.Location = new Point(736, 52);
+        bSuivi.Name = "bSuivi";
+        bSuivi.Size = new Size(110, 30);
+        bSuivi.TabIndex = 12;
+        bSuivi.Text = "Ouvrir suivi";
+        // 
+        // dgvResultats
+        // 
+        dgvResultats.AllowUserToAddRows = false;
+        dgvResultats.AllowUserToDeleteRows = false;
+        dgvResultats.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
+        dgvResultats.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
+        dgvResultats.Columns.AddRange(new DataGridViewColumn[] { colNumero, colDescription, colEtat, colReference, colDetail });
+        dgvResultats.Location = new Point(16, 88);
+        dgvResultats.MultiSelect = false;
+        dgvResultats.Name = "dgvResultats";
+        dgvResultats.ReadOnly = true;
+        dgvResultats.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
+        dgvResultats.Size = new Size(920, 372);
+        dgvResultats.TabIndex = 13;
+        // 
+        // colNumero
+        // 
         colNumero.DataPropertyName = "Numero";
         colNumero.HeaderText = "Numero";
-        dgvResultats.Columns.Add(colNumero);
-        colDescription = new DataGridViewTextBoxColumn();
-        colDescription.Name = "colDescription";
+        colNumero.Name = "colNumero";
+        colNumero.ReadOnly = true;
+        // 
+        // colDescription
+        // 
         colDescription.DataPropertyName = "Description";
         colDescription.HeaderText = "Description";
-        dgvResultats.Columns.Add(colDescription);
-        colEtat = new DataGridViewTextBoxColumn();
-        colEtat.Name = "colEtat";
+        colDescription.Name = "colDescription";
+        colDescription.ReadOnly = true;
+        // 
+        // colEtat
+        // 
         colEtat.DataPropertyName = "Etat";
         colEtat.HeaderText = "Etat";
-        dgvResultats.Columns.Add(colEtat);
-        colReference = new DataGridViewTextBoxColumn();
-        colReference.Name = "colReference";
+        colEtat.Name = "colEtat";
+        colEtat.ReadOnly = true;
+        // 
+        // colReference
+        // 
         colReference.DataPropertyName = "Reference";
         colReference.HeaderText = "Reference";
-        dgvResultats.Columns.Add(colReference);
-        colDetail = new DataGridViewTextBoxColumn();
-        colDetail.Name = "colDetail";
+        colReference.Name = "colReference";
+        colReference.ReadOnly = true;
+        // 
+        // colDetail
+        // 
         colDetail.DataPropertyName = "Detail";
         colDetail.HeaderText = "Detail";
-        dgvResultats.Columns.Add(colDetail);
+        colDetail.Name = "colDetail";
+        colDetail.ReadOnly = true;
+        // 
+        // bPrecedent
+        // 
+        bPrecedent.Anchor = AnchorStyles.Bottom | AnchorStyles.Left;
+        bPrecedent.Location = new Point(16, 480);
+        bPrecedent.Name = "bPrecedent";
+        bPrecedent.Size = new Size(95, 32);
+        bPrecedent.TabIndex = 14;
+        bPrecedent.Text = "Précédent";
+        // 
+        // bSuivant
+        // 
+        bSuivant.Anchor = AnchorStyles.Bottom | AnchorStyles.Left;
+        bSuivant.Location = new Point(120, 480);
+        bSuivant.Name = "bSuivant";
+        bSuivant.Size = new Size(95, 32);
+        bSuivant.TabIndex = 15;
+        bSuivant.Text = "Suivant";
+        // 
+        // bNouveau
+        // 
+        bNouveau.Anchor = AnchorStyles.Bottom | AnchorStyles.Left;
+        bNouveau.Location = new Point(230, 480);
+        bNouveau.Name = "bNouveau";
+        bNouveau.Size = new Size(95, 32);
+        bNouveau.TabIndex = 16;
+        bNouveau.Text = "Nouveau";
+        // 
+        // bModifier
+        // 
+        bModifier.Anchor = AnchorStyles.Bottom | AnchorStyles.Left;
+        bModifier.Location = new Point(335, 480);
+        bModifier.Name = "bModifier";
+        bModifier.Size = new Size(95, 32);
+        bModifier.TabIndex = 17;
+        bModifier.Text = "Modifier";
+        // 
+        // bAction
+        // 
+        bAction.Anchor = AnchorStyles.Bottom | AnchorStyles.Left;
+        bAction.Location = new Point(440, 480);
+        bAction.Name = "bAction";
+        bAction.Size = new Size(95, 32);
+        bAction.TabIndex = 18;
+        bAction.Text = "Dupliquer";
+        // 
+        // nudNouveauNumero
+        // 
+        nudNouveauNumero.Anchor = AnchorStyles.Bottom | AnchorStyles.Left;
+        nudNouveauNumero.Location = new Point(550, 480);
+        nudNouveauNumero.Maximum = new decimal(new int[] { 1000000, 0, 0, 0 });
+        nudNouveauNumero.Minimum = new decimal(new int[] { 1, 0, 0, 0 });
+        nudNouveauNumero.Name = "nudNouveauNumero";
+        nudNouveauNumero.Size = new Size(100, 23);
+        nudNouveauNumero.TabIndex = 19;
+        nudNouveauNumero.Value = new decimal(new int[] { 105, 0, 0, 0 });
+        // 
+        // bConfirmer
+        // 
+        bConfirmer.Anchor = AnchorStyles.Bottom | AnchorStyles.Left;
+        bConfirmer.Location = new Point(670, 480);
+        bConfirmer.Name = "bConfirmer";
+        bConfirmer.Size = new Size(110, 32);
+        bConfirmer.TabIndex = 20;
+        bConfirmer.Text = "Confirmer";
+        // 
+        // lEtat
+        // 
+        lEtat.Anchor = AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
+        lEtat.Location = new Point(16, 525);
+        lEtat.Name = "lEtat";
+        lEtat.Size = new Size(920, 55);
+        lEtat.TabIndex = 21;
+        lEtat.Text = "Maquette fournie — raccordement MVC à réaliser.";
+        // 
+        // FormCommandes
+        // 
         AutoScaleDimensions = new SizeF(7F, 15F);
         AutoScaleMode = AutoScaleMode.Font;
         ClientSize = new Size(960, 600);
-        MinimumSize = new Size(960, 600);
-        StartPosition = FormStartPosition.CenterParent;
-        Name = "FormCommandes";
-        Text = "TP02 — Commandes — FormCommandes";
-        Controls.Add(lFiltres);
-        Controls.Add(tbFiltre);
         Controls.Add(cbMontant);
         Controls.Add(nudMontant);
         Controls.Add(cbEtat);
-        Controls.Add(cbHistorique);
         Controls.Add(cbOrdre);
-        Controls.Add(cbPeriode);
-        Controls.Add(dtpDebutRecherche);
-        Controls.Add(dtpFinRecherche);
         Controls.Add(bRechercher);
         Controls.Add(bTous);
         Controls.Add(bSuivi);
@@ -186,24 +243,24 @@ partial class FormCommandes
         Controls.Add(nudNouveauNumero);
         Controls.Add(bConfirmer);
         Controls.Add(lEtat);
+        MinimumSize = new Size(960, 600);
+        Name = "FormCommandes";
+        StartPosition = FormStartPosition.CenterParent;
+        Text = "TP02 — Commandes — FormCommandes";
+        ((System.ComponentModel.ISupportInitialize)nudMontant).EndInit();
+        ((System.ComponentModel.ISupportInitialize)dgvResultats).EndInit();
+        ((System.ComponentModel.ISupportInitialize)nudNouveauNumero).EndInit();
         ResumeLayout(false);
-        PerformLayout();
     }
     private DataGridViewTextBoxColumn colNumero;
     private DataGridViewTextBoxColumn colDescription;
     private DataGridViewTextBoxColumn colEtat;
     private DataGridViewTextBoxColumn colReference;
     private DataGridViewTextBoxColumn colDetail;
-    private Label lFiltres;
-    private TextBox tbFiltre;
     private CheckBox cbMontant;
     private NumericUpDown nudMontant;
     private ComboBox cbEtat;
-    private CheckBox cbHistorique;
     private ComboBox cbOrdre;
-    private CheckBox cbPeriode;
-    private DateTimePicker dtpDebutRecherche;
-    private DateTimePicker dtpFinRecherche;
     private Button bRechercher;
     private Button bTous;
     private Button bSuivi;
